@@ -1,2 +1,8 @@
-# F_square
-Official website for F-Square Furniture – luxury modern furniture brand.
+# F_Square Furniture
+
+This is a professional Next.js website for F_Square Furniture, built with:
+
+- Next.js App Router
+- Tailwind CSS
+- Vercel Speed Insights
+- For luxury modern furniture brand and timeless style 
