@@ -1,4 +1,4 @@
-import ProductCard from "../../components/ProductCard";
+import ProductCard from "../components/ProductCard";
 
 const allProducts = [
   { title: "Luxury Sofa Set", price: 500000, category: "sofa", image: "/images/sofa1.jpg" },
