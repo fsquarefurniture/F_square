@@ -1,13 +1,12 @@
 export default function Services() {
   return (
-    <section className="p-10">
-      <h1 className="text-4xl font-bold mb-4">Our Services</h1>
-      <ul className="text-lg text-gray-400 space-y-2">
-        <li>Custom Furniture Design</li>
-        <li>Interior Consultation</li>
-        <li>Luxury Sofa Production</li>
-        <li>Office & Home Furnishing</li>
-      </ul>
-    </section>
+    <main style={{ padding: "120px 20px", textAlign: "center" }}>
+      <h2 style={{ fontSize: "42px", marginBottom: "30px", color: "#d4af37" }}>
+        Our Services
+      </h2>
+      <p style={{ maxWidth: "800px", margin: "auto", color: "#cfcfcf", fontSize: "19px" }}>
+        We design and manufacture luxury custom furniture for homes, offices, and commercial spaces...
+      </p>
+    </main>
   )
-}
+          }
