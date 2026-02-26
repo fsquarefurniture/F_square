@@ -1,11 +1,10 @@
 export default function About() {
   return (
-    <section className="p-10">
-      <h1 className="text-4xl font-bold mb-4">About F-Square</h1>
-      <p className="text-lg text-gray-400">
-        F-Square Furniture is a luxury modern furniture brand focused on
-        premium craftsmanship, elegance, and timeless design.
+    <main style={{ padding: "120px 20px", textAlign: "center" }}>
+      <h2 style={{ fontSize: "42px", marginBottom: "30px", color: "#d4af37" }}>About Us</h2>
+      <p style={{ maxWidth: "800px", margin: "auto", color: "#cfcfcf", fontSize: "19px" }}>
+        F-Square Furniture is a luxury modern furniture brand delivering high-end furniture for homes, offices, and commercial spaces...
       </p>
-    </section>
+    </main>
   )
 }
