@@ -1,7 +1,17 @@
-export default function GalleryItem({ title }) {
+export default function GalleryItem({ image, title }) {
   return (
-    <div className="border border-gray-800 p-6 rounded-lg">
-      <h3 className="text-xl font-semibold">{title}</h3>
+    <div style={{
+      borderRadius: "10px",
+      overflow: "hidden",
+      boxShadow: "0 4px 20px rgba(0,0,0,0.4)"
+    }}>
+      <img src={image} alt={title} style={{ width: "100%", display: "block" }} />
+      <h4 style={{
+        textAlign: "center",
+        marginTop: "10px",
+        fontWeight: "bold",
+        color: "#d4af37"
+      }}>{title}</h4>
     </div>
-  )
+  );
 }
