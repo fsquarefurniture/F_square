@@ -1,16 +1,25 @@
-import Link from "next/link"
-
 export default function Navbar() {
   return (
-    <nav className="flex justify-between items-center p-6 bg-black border-b border-gray-800">
-      <h1 className="text-xl font-bold">F-Square</h1>
-      <div className="space-x-6">
-        <Link href="/">Home</Link>
-        <Link href="/about">About</Link>
-        <Link href="/services">Services</Link>
-        <Link href="/portfolio">Portfolio</Link>
-        <Link href="/contact">Contact</Link>
+    <nav style={{
+      position: "fixed",
+      top: 0,
+      width: "100%",
+      padding: "20px 40px",
+      display: "flex",
+      justifyContent: "space-between",
+      alignItems: "center",
+      backgroundColor: "rgba(0,0,0,0.85)",
+      backdropFilter: "blur(10px)",
+      zIndex: 1000
+    }}>
+      <h2 style={{ letterSpacing: "2px" }}>F-SQUARE</h2>
+      <div style={{ display: "flex", gap: "25px" }}>
+        <a href="/" style={{ color: "white", textDecoration: "none" }}>Home</a>
+        <a href="/about" style={{ color: "white", textDecoration: "none" }}>About</a>
+        <a href="/services" style={{ color: "white", textDecoration: "none" }}>Services</a>
+        <a href="/portfolio" style={{ color: "white", textDecoration: "none" }}>Portfolio</a>
+        <a href="/contact" style={{ color: "#d4af37", textDecoration: "none" }}>Contact</a>
       </div>
     </nav>
   )
-}
+  }
