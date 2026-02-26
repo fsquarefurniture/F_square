@@ -1,185 +1,196 @@
 export default function Home() {
   return (
     <main style={{
+      margin: 0,
+      padding: 0,
       fontFamily: "Helvetica, Arial, sans-serif",
-      background: "#0b0b0b",
+      backgroundColor: "#0c0c0c",
       color: "white"
     }}>
 
       {/* NAVBAR */}
       <nav style={{
-        padding: "22px 60px",
+        position: "fixed",
+        top: 0,
+        width: "100%",
+        padding: "20px 40px",
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
-        borderBottom: "1px solid #222",
-        position: "sticky",
-        top: 0,
-        background: "#0b0b0b",
+        backgroundColor: "rgba(0,0,0,0.8)",
+        backdropFilter: "blur(10px)",
         zIndex: 1000
       }}>
         <h2 style={{ letterSpacing: "2px" }}>F-SQUARE</h2>
 
-        <div style={{ display: "flex", gap: "35px", fontSize: "15px" }}>
-          <a href="#" style={{ color: "white", textDecoration: "none" }}>Home</a>
-          <a href="#collection" style={{ color: "white", textDecoration: "none" }}>Collection</a>
-          <a href="#projects" style={{ color: "white", textDecoration: "none" }}>Projects</a>
-          <a href="#about" style={{ color: "white", textDecoration: "none" }}>Brand</a>
-          <a href="#contact" style={{ color: "white", textDecoration: "none" }}>Contact</a>
-        </div>
+        <a
+          href="https://wa.me/2348051837390"
+          target="_blank"
+          style={{
+            color: "#d4af37",
+            textDecoration: "none",
+            fontWeight: "bold"
+          }}
+        >
+          Contact
+        </a>
       </nav>
 
 
       {/* HERO */}
       <section style={{
-        height: "90vh",
-        background: "url('https://images.unsplash.com/photo-1618220179428-22790b461013') center/cover",
+        height: "100vh",
         display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
         alignItems: "center",
-        paddingLeft: "8%"
+        textAlign: "center",
+        padding: "20px"
       }}>
-        <div style={{ maxWidth: "650px" }}>
-          <h1 style={{
-            fontSize: "72px",
-            lineHeight: "1.1",
-            marginBottom: "25px"
-          }}>
-            Furniture for <br /> Extraordinary Spaces
-          </h1>
+        <h1 style={{
+          fontSize: "64px",
+          letterSpacing: "4px",
+          marginBottom: "20px"
+        }}>
+          F-Square Furniture
+        </h1>
 
-          <p style={{ fontSize: "20px", opacity: 0.85 }}>
-            Global luxury furniture crafted for elite homes, offices,
-            hotels, and architectural masterpieces.
-          </p>
-        </div>
+        <p style={{
+          fontSize: "22px",
+          color: "#cfcfcf",
+          maxWidth: "750px",
+          marginBottom: "40px"
+        }}>
+          Where Luxury Meets Precision Craftsmanship.
+        </p>
+
+        <a
+          href="https://wa.me/2348051837390?text=Hello%20I%20am%20interested%20in%20F-Square%20Furniture"
+          target="_blank"
+          style={{
+            padding: "18px 40px",
+            border: "2px solid #d4af37",
+            color: "#d4af37",
+            textDecoration: "none",
+            borderRadius: "40px",
+            fontSize: "18px",
+            fontWeight: "bold"
+          }}
+        >
+          Request Private Consultation
+        </a>
       </section>
 
 
-      {/* COLLECTION */}
-      <section id="collection" style={{ padding: "120px 8%" }}>
-        <h2 style={{ fontSize: "42px", marginBottom: "60px" }}>
-          Signature Collection
+      {/* ABOUT */}
+      <section style={{
+        padding: "120px 20px",
+        textAlign: "center",
+        backgroundColor: "#111"
+      }}>
+        <h2 style={{
+          fontSize: "42px",
+          marginBottom: "30px",
+          color: "#d4af37"
+        }}>
+          About Our Brand
+        </h2>
+
+        <p style={{
+          maxWidth: "800px",
+          margin: "auto",
+          fontSize: "19px",
+          lineHeight: "1.8",
+          color: "#cfcfcf"
+        }}>
+          F-Square Furniture is a luxury design house dedicated to
+          crafting timeless furniture pieces that elevate living
+          environments. Our philosophy blends premium materials,
+          architectural elegance, and refined craftsmanship to create
+          extraordinary spaces.
+        </p>
+      </section>
+
+
+      {/* SERVICES */}
+      <section style={{
+        padding: "120px 20px",
+        textAlign: "center"
+      }}>
+        <h2 style={{
+          fontSize: "42px",
+          marginBottom: "60px",
+          color: "#d4af37"
+        }}>
+          Signature Services
         </h2>
 
         <div style={{
           display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
-          gap: "40px"
+          gap: "40px",
+          maxWidth: "900px",
+          margin: "auto",
+          fontSize: "18px",
+          color: "#cfcfcf"
         }}>
-
-          {[
-            ["https://images.unsplash.com/photo-1505693416388-ac5ce068fe85", "Presidential Beds"],
-            ["https://images.unsplash.com/photo-1582582621959-48d27397dc69", "Royal Sofas"],
-            ["https://images.unsplash.com/photo-1493666438817-866a91353ca9", "Executive Dining"],
-            ["https://images.unsplash.com/photo-1616628188859-7a11abb6fcc9", "Custom Interiors"]
-          ].map((item, i) => (
-            <div key={i} style={{ background: "#111" }}>
-              <img
-                src={item[0]}
-                style={{ width: "100%", height: "260px", objectFit: "cover" }}
-              />
-              <div style={{ padding: "20px" }}>
-                <h3>{item[1]}</h3>
-              </div>
-            </div>
-          ))}
-
+          <p>Luxury Residential Furniture Design</p>
+          <p>Executive & Corporate Interior Solutions</p>
+          <p>Custom Commissioned Pieces</p>
+          <p>Architectural Space Consultation</p>
         </div>
       </section>
 
 
-      {/* PROJECTS */}
-      <section id="projects" style={{
-        background: "#111",
-        padding: "120px 8%"
-      }}>
-        <h2 style={{ fontSize: "42px", marginBottom: "50px" }}>
-          Global Projects
-        </h2>
-
-        <p style={{ maxWidth: "800px", fontSize: "19px", opacity: 0.9 }}>
-          F-Square Furniture delivers luxury interior solutions for villas,
-          penthouses, hotels, corporate headquarters, and government residences
-          across Africa and internationally.
-        </p>
-      </section>
-
-
-      {/* ABOUT BRAND */}
-      <section id="about" style={{ padding: "120px 8%" }}>
-        <h2 style={{ fontSize: "42px", marginBottom: "40px" }}>
-          The Brand
-        </h2>
-
-        <p style={{
-          maxWidth: "850px",
-          fontSize: "19px",
-          lineHeight: "1.7",
-          opacity: 0.9
-        }}>
-          F-Square Furniture represents the intersection of architecture,
-          craftsmanship, and luxury living. Our pieces are designed for
-          individuals and institutions that demand excellence without compromise.
-          Every product is engineered for durability, prestige, and timeless appeal.
-        </p>
-      </section>
-
-
-      {/* CLIENT TESTIMONIAL */}
+      {/* CALL TO ACTION */}
       <section style={{
-        background: "#111",
-        padding: "120px 8%",
-        textAlign: "center"
+        padding: "150px 20px",
+        textAlign: "center",
+        backgroundColor: "#111"
       }}>
-        <h2 style={{ fontSize: "38px" }}>Client Experience</h2>
-
-        <p style={{
-          maxWidth: "700px",
-          margin: "40px auto",
-          fontSize: "22px",
-          fontStyle: "italic",
-          opacity: 0.9
+        <h2 style={{
+          fontSize: "48px",
+          marginBottom: "30px"
         }}>
-          “F-Square transformed our residence into a palace.
-          The quality rivals the finest European brands.”
-        </p>
+          Elevate Your Standard of Living
+        </h2>
 
-        <strong>— Private Estate Owner</strong>
-      </section>
-
-
-      {/* CONTACT */}
-      <section id="contact" style={{
-        padding: "120px 8%",
-        textAlign: "center"
-      }}>
-        <h2 style={{ fontSize: "42px" }}>Contact & Commissions</h2>
-
-        <p style={{ marginTop: "30px", fontSize: "20px", opacity: 0.9 }}>
-          Abuja, Nigeria <br />
-          Global Delivery Available <br /><br />
-          📞 +234 805 183 7390 <br />
-          ✉️ fsquarefurniture@gmail.com
-        </p>
+        <a
+          href="https://wa.me/2348051837390?text=I%20want%20luxury%20furniture%20consultation"
+          target="_blank"
+          style={{
+            padding: "20px 50px",
+            backgroundColor: "#d4af37",
+            color: "black",
+            borderRadius: "50px",
+            textDecoration: "none",
+            fontWeight: "bold",
+            fontSize: "18px"
+          }}
+        >
+          Begin Consultation
+        </a>
       </section>
 
 
       {/* FOOTER */}
       <footer style={{
-        borderTop: "1px solid #222",
-        padding: "30px",
+        padding: "50px 20px",
         textAlign: "center",
-        opacity: 0.7
+        backgroundColor: "#000",
+        color: "#777"
       }}>
-        © {new Date().getFullYear()} F-Square Furniture — Global Luxury Brand
+        <h3 style={{ marginBottom: "10px" }}>F-Square Furniture</h3>
+        <p>Luxury Design House</p>
+        <p style={{ marginTop: "20px", fontSize: "14px" }}>
+          © {new Date().getFullYear()} F-Square. All rights reserved.
+        </p>
       </footer>
 
 
-      {/* WHATSAPP BUTTON */}
+      {/* FLOATING WHATSAPP */}
       <a
-        href="https://wa.me/2348051837390?text=Hello%20I%20want%20luxury%20furniture"
+        href="https://wa.me/2348051837390"
         target="_blank"
-        rel="noopener noreferrer"
         style={{
           position: "fixed",
           bottom: "25px",
@@ -194,8 +205,8 @@ export default function Home() {
           justifyContent: "center",
           fontSize: "32px",
           textDecoration: "none",
-          boxShadow: "0 8px 25px rgba(0,0,0,0.5)",
-          zIndex: 1000
+          boxShadow: "0 8px 25px rgba(0,0,0,0.6)",
+          zIndex: 999
         }}
       >
         💬
@@ -203,4 +214,4 @@ export default function Home() {
 
     </main>
   )
-        }
+            }
