@@ -12,14 +12,14 @@ export default function Navbar() {
       backdropFilter: "blur(10px)",
       zIndex: 1000
     }}>
-      <h2 style={{ letterSpacing: "2px" }}>F-SQUARE</h2>
+      <h2 style={{ letterSpacing: "2px", color: "#d4af37" }}>F-SQUARE</h2>
       <div style={{ display: "flex", gap: "25px" }}>
         <a href="/" style={{ color: "white", textDecoration: "none" }}>Home</a>
         <a href="/about" style={{ color: "white", textDecoration: "none" }}>About</a>
-        <a href="/services" style={{ color: "white", textDecoration: "none" }}>Services</a>
+        <a href="/products" style={{ color: "white", textDecoration: "none" }}>Products</a>
         <a href="/portfolio" style={{ color: "white", textDecoration: "none" }}>Portfolio</a>
         <a href="/contact" style={{ color: "#d4af37", textDecoration: "none" }}>Contact</a>
       </div>
     </nav>
-  )
-  }
+  );
+}
